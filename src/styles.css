@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    --main-font: 'Mynerve', cursive;
+    --sec-font:  font-family: 'Roboto Slab', serif;
+    --prim-color:#365b81;
+    --sec-color:#18263d;
+    --tert-color:#40293d;
+}
