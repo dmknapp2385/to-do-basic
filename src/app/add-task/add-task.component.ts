@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TasksService } from '../tasks.service';
+import { Task } from '../task';
 
 @Component({
   selector: 'app-add-task',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-task.component.css'],
 })
 export class AddTaskComponent {
-  
+  constructor(private taskService: TasksService) {}
 }
