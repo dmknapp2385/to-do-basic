@@ -8,5 +8,4 @@ import { TasksService } from '../tasks.service';
 })
 export class SingleTaskComponent {
   constructor(private taskService: TasksService) {}
-  //update task
 }
