@@ -26,6 +26,7 @@
 }
 
 #task-list ul {
+  font-style: var(--sec-font);
   list-style-type: none;
   text-align: left;
   padding-left: 5;

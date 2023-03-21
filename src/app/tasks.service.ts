@@ -33,6 +33,15 @@ export class TasksService {
       catchError(this.handleError<Task[]>('getTasks', []))
     );
   }
+  
+  //get task by id
+  getTask(id: number): Observable<Task> {
+    const idUrl = `${this.taskUrl}/${id}`;
+    return this.http.get<Task>(idUrl).pipe(
+      tap(_=> console.log(`task id: ${id} fetched`)),
+      catchError(this.handleError<Task>('get task by ID'))
+    )
+  }
 
   //add a task
 
