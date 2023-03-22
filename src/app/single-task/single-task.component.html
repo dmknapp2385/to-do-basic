@@ -1,1 +1,6 @@
-<div *ngIf="task">{{task.task}}</div>
+<div *ngIf="task">
+    <label for="to-do" >Edit Task: </label>
+    <input type="text" name=""  [value]="task.task" #taskName>
+    <button type="button" class="save-btn" (click)="save(taskName.value)">Save</button>
+    <button class="back-btn"><--</button>
+</div>

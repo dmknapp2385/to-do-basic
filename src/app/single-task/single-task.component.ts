@@ -25,4 +25,9 @@ export class SingleTaskComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.taskService.getTask(id).subscribe((task) => (this.task = task));
   }
+
+  save(task: string) {
+    //update task here
+    console.log(task)
+  }
 }
