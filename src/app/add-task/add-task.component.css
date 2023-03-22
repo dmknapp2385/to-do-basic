@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   padding: 15px;
-  font-family: var(--main-font);
   font-size: large;
+  font-family: var(--sec-font);
 }
 
 #add-task {
@@ -26,7 +26,6 @@
 }
 
 #task-list ul {
-  font-style: var(--sec-font);
   list-style-type: none;
   text-align: left;
   padding-left: 5;
@@ -36,8 +35,38 @@
   margin-left: 4rem;
 }
 
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--main-font);
+}
+
+a:hover {
+  color: var(--tert-color);
+  font-size: larger;
+}
+
 @media (max-width: 600px) {
   .task-date {
     display: none;
   }
+}
+
+.delete-btn {
+  display: inline-block;
+  color: var(--prim-color);
+  background-color: var(--sec-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.delete-btn:hover {
+  color: var(--sec-color);
+  background-color: var(--prim-color);
 }
