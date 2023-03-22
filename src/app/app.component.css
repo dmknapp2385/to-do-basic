@@ -1,0 +1,8 @@
+h1 {
+  background-color: var(--prim-color);
+  color: white;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}

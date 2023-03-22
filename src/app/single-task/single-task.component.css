@@ -1,6 +1,6 @@
 div {
   position: relative;
-  height: 90vh;
+  height: 75vh;
   background-color: var(--sec-color);
   font-family: var(--sec-font);
   font-size: 20px;
@@ -13,7 +13,8 @@ label {
 }
 
 input,
-.save-btn {
+.save-btn,
+.back-btn {
   font-size: 20px;
   font-family: var(--main-font);
   margin-right: 20px;
@@ -31,7 +32,8 @@ input:active {
   color: white;
 }
 
-.save-btn:hover {
+.save-btn:hover,
+.back-btn:hover {
   border-radius: 15px;
   background-color: white;
   color: var(--prim-color);
@@ -41,4 +43,6 @@ input:active {
   position: absolute;
   bottom: 10px;
   left: 5px;
+  background-color: var(--prim-color);
+  color: white;
 }
