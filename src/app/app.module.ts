@@ -12,9 +12,10 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { SingleTaskComponent } from './single-task/single-task.component';
+import { TaskFormComponent } from './task-form/task-form.component';
 
 @NgModule({
-  declarations: [AppComponent, AddTaskComponent, SingleTaskComponent],
+  declarations: [AppComponent, AddTaskComponent, SingleTaskComponent, TaskFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
