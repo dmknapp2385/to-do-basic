@@ -19,7 +19,10 @@
     <input type="text" name="due-date" id="day" #day />
   </div>
 
-  <button class="add-btn" type="button" (click)="addInput(addTask.value)">
+  <button class="add-btn" type="button" (click)="addInput(addTask.value, month.value, day.value)">
     Add Task
   </button>
 </div>
+
+<div class="error" *ngIf="!isComplete">Please Fill out all areas of the Form</div>
+<div class="error" *ngIf="!isCorrectDay">The Day you entered is not a correct date</div>

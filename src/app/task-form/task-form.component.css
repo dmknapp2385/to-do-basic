@@ -8,3 +8,8 @@
 .add-task label {
   margin-right: 10px;
 }
+
+.error {
+  color: red;
+  size: 15px;
+}

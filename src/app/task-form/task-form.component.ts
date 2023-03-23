@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { concat } from 'rxjs';
 
 @Component({
   selector: 'app-task-form',
@@ -15,11 +16,30 @@ export class TaskFormComponent {
     'June',
     'July',
     'August',
+    'September',
     'October',
     'November',
     'December',
   ];
-  addInput(value: string) {
-    console.log(value, 'input');
+
+  isComplete = true;
+  isCorrectDay = true;
+
+  addInput(task: string, month: string, day: string) {
+    let numberDay: number, numberMonth: number;
+    numberDay = Number(day);
+    numberMonth = Number(month);
+    if (!task || !month || !day) {
+      this.isComplete = false;
+      return;
+
+      // } else if (month.length < 2) {
+      //   month = '0' + month;
+      //   numberMonth = Number(month)
+    } else if (numberDay < 1 || numberDay > 31) {
+      console.log('in day');
+      this.isCorrectDay = false;
+      return;
+    }
   }
 }
