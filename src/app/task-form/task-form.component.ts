@@ -1,5 +1,4 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Task } from '../task';
 
 @Component({
   selector: 'app-task-form',
@@ -7,5 +6,20 @@ import { Task } from '../task';
   styleUrls: ['./task-form.component.css'],
 })
 export class TaskFormComponent {
- 
+  months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'October',
+    'November',
+    'December',
+  ];
+  addInput(value: string) {
+    console.log(value, 'input');
+  }
 }

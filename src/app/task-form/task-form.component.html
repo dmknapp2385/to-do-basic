@@ -1,0 +1,25 @@
+<div>
+  <div class="add-task">
+    <label for="add-task">Add a Task: </label>
+    <textarea
+      name="add-task"
+      id="add-task"
+      #addTask
+      cols="20"
+      rows="5"
+    ></textarea>
+  </div>
+  <div class="date-input">
+    <label for="due-date"> Date Due: </label>
+    <select name="due-date" id="month" #month>
+      <option *ngFor="let month of months; let i = index" value="{{ i + 1 }}">
+        {{ month }}
+      </option>
+    </select>
+    <input type="text" name="due-date" id="day" #day />
+  </div>
+
+  <button class="add-btn" type="button" (click)="addInput(addTask.value)">
+    Add Task
+  </button>
+</div>
