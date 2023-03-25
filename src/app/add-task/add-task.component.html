@@ -10,7 +10,7 @@
         <a href="" routerLink="{{ task.id }}"
           >{{ task.task }}
           <span class="task-date">{{
-            task.date | date : "MM/dd/yyyy"
+            task.date | date : "MM/dd/yy"
           }}</span></a
         >
         <button type="button" class="delete-btn" (click)="delete(task.id)">

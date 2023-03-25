@@ -1,6 +1,6 @@
 <div *ngIf="task">
-    <label for="to-do" >Edit Task: </label>
-    <input type="text" name=""  [value]="task.task" #taskName>
+    <label for="task-detal" >Edit Task: </label>
+    <input type="text" name="task-detail" id="task-detail" [value]="task.task"  #taskName>
     <button type="button" class="save-btn" (click)="save(taskName.value)">Save</button>
-    <button class="back-btn"><--</button>
+    <button class="back-btn" (click)="goBack()"><--</button>
 </div>

@@ -28,6 +28,17 @@ export class SingleTaskComponent implements OnInit {
 
   save(task: string) {
     //update task here
-    console.log(task)
+    let updateTask = {
+      id: this.task?.id,
+      task: task,
+      date: this.task!.date,
+    };
+    this.taskService
+      .updateTask(updateTask as Task)
+      .subscribe((_) => this.goBack());
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }

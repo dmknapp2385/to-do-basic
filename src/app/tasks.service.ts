@@ -60,10 +60,10 @@ export class TasksService {
   }
 
   //update task
-  updateHero(task: Task): Observable<any> {
+  updateTask(task: Task): Observable<any> {
     return this.http.put(this.taskUrl, task, this.httpOptions).pipe(
-      tap((_) => console.log(`updated hero id=${task.id}`)),
-      catchError(this.handleError<any>(`updateHero`))
+      tap((_) => console.log(`updated task id=${task.id}`)),
+      catchError(this.handleError<any>(`update task`))
     );
   }
 }
