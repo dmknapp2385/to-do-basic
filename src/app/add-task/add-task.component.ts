@@ -1,6 +1,7 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Task } from '../task';
 import { TasksService } from '../tasks.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-task',
@@ -16,10 +17,9 @@ export class AddTaskComponent implements OnInit {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
 
-  // addTask(task: Task): void {
-  //   console.log(task, 'in add task component')
-  //   this.taskService.addTask(task).subscribe(task => this.tasks.push(task))
-  // }
+  addTask(task: Task): void {
+    this.taskService.addTask(task).subscribe(task => this.tasks.push(task))
+  }
 
   delete(id: number): void {
     this.tasks = this.tasks.filter((t) => t.id !== id);

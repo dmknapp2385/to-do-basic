@@ -1,7 +1,7 @@
 <div id="main">
   <div id="add-task">
     Add a Task
-    <app-task-form ></app-task-form>
+    <app-task-form (inputEvent)="addTask($event)"></app-task-form>
   </div>
   <div id="task-list">
     My Tasks
@@ -13,7 +13,9 @@
             task.date | date : "dd/MM/yyyy"
           }}</span></a
         >
-        <button type="button" class="delete-btn" (click)="delete(task.id)">X</button>
+        <button type="button" class="delete-btn" (click)="delete(task.id)">
+          X
+        </button>
       </li>
     </ul>
   </div>
