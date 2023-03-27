@@ -1,27 +1,31 @@
-# ToDo
+# To Do List
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+## Description
 
-## Development server
+Simple front end Angular application for generating a to do list. Options to Add, Update, and Delete.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tabe of Contents
 
-## Code scaffolding
+- [Built With](#built-with)
+- [Usage](#usage)
+- [Questions](#questions)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built With
 
-## Build
+- Angular
+- Typscript
+- Node.js
+- HTML
+- CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Running unit tests
+Clone the repository. Run npm innstall and then npm start. Navigate to 'http://localhost:4200/'
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Credits
 
-## Running end-to-end tests
+Danielle Knapp
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Questions
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Please direct any questions to dmknapp2385@gmail.com or visit my [GitHub](https://github.com/dmknapp2385) for more information.
