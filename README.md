@@ -22,9 +22,9 @@ Simple front end Angular application for generating a to do list. Options to Add
 
 Clone the repository. Run npm innstall and then npm start. Navigate to 'http://localhost:4200/'
 
-## Credits
+## License
 
-Danielle Knapp
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Questions
 
